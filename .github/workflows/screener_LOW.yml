@@ -4,7 +4,7 @@ name: KRX Quant Momentum Screener
 on:
   schedule:
     # 매일 월~금요일 한국 시간(KST) 오후 6:00에 자동 실행 (UTC 기준 오전 9:00)
-    - cron: '0 9 * * 1-5'
+    - cron: '38 14 * * 1-5'
   workflow_dispatch: # GitHub 웹페이지에서 수동으로 실행하고 싶을 때 사용
 
 jobs:
