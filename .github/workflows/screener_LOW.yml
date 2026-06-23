@@ -27,7 +27,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install FinanceDataReader pandas numpy requests lxml beautifulsoup4
+        # FinanceDataReader 대신 finance-datareader 로 변경
+        pip install finance-datareader pandas numpy requests lxml beautifulsoup4
 
     # 5. 스크리닝 스크립트 실행 및 환경 변수 전달
     - name: Run KRX Screener Script
